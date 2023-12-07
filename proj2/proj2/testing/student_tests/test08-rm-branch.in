@@ -1,0 +1,74 @@
+# rm-branch test
+I definitions.inc
+> init
+<<<
+
++ wug.txt wug.txt
+> add wug.txt
+<<<
+
+> status
+=== Branches ===
+\*master
+
+=== Staged Files ===
+wug.txt
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<*
+
+> commit "added wug.txt"
+<<<
+
+> branch "testBranch01"
+<<<
+
+> branch "testBranch02"
+<<<
+
+> status
+=== Branches ===
+\*master
+testBranch01
+testBranch02
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<*
+
+> rm-branch testBranch
+A branch with that name does not exist.
+<<<
+
+> rm-branch master
+Cannot remove the current branch.
+<<<
+
+> rm-branch testBranch01
+<<<
+
+> status
+=== Branches ===
+\*master
+testBranch02
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<*

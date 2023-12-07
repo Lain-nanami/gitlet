@@ -1,0 +1,44 @@
+# find test
+I definitions.inc
+> init
+<<<
+
++ wug.txt wug.txt
+> add wug.txt
+<<<
+
+> commit "add wug.txt"
+<<<
+
++ notwug.txt notwug.txt
+> add notwug.txt
+<<<
+
+> commit "multiple commit same message test"
+<<<
+
++ a.txt a.txt
+> add a.txt
+<<<
+
+> commit "multiple commit same message test"
+<<<
+
++ b.txt b.txt
+> add b.txt
+<<<
+
+> commit "multiple commit same message test"
+<<<
+
+> find "no such commit"
+Found no commit with that message.
+<<<
+
+> find "add wug.txt"
+${ARBLINE}
+<<<*
+
+> find "multiple commit same message test"
+${ARBLINES}
+<<<*

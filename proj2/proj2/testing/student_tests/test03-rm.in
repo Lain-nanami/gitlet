@@ -1,0 +1,24 @@
+# rm test
+
+> init
+<<<
+
++ wug.txt wug.txt
+> rm wug.txt
+No reason to remove the file.
+<<<
+
+> add wug.txt
+<<<
+
+> rm wug.txt
+<<<
+
+> add wug.txt
+<<<
+> commit "add wug.txt"
+<<<
+
+> rm wug.txt
+<<<
+

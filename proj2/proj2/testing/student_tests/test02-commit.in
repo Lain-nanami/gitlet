@@ -1,0 +1,26 @@
+# commit test
+
+> init
+<<<
+
+> commit "empty stage"
+No changes added to the commit.
+<<<
+
++ wug.txt wug.txt
+> add wug.txt
+<<<
+
+> commit " "
+Please enter a commit message.
+<<<
+
+> commit "add wug.txt"
+<<<
+
++ notwug.txt notwug.txt
+> add notwug.txt
+<<<
+
+> commit "add notwug.txt"
+<<<

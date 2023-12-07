@@ -1,0 +1,17 @@
+# add test
+> init
+<<<
+
++ wug.txt wug.txt
+
+> add wug.txt
+<<<
+
+> add notwug.txt
+File does not exit.
+<<<
+
++ notwug.txt notwug.txt
+
+> add notwug.txt
+<<<

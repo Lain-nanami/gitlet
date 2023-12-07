@@ -1,0 +1,66 @@
+# branch test
+I definitions.inc
+> init
+<<<
+
++ wug.txt wug.txt
+> add wug.txt
+<<<
+
+> status
+=== Branches ===
+\*master
+
+=== Staged Files ===
+wug.txt
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<*
+
+> commit "added wug.txt"
+<<<
+
+> branch "testBranch"
+<<<
+
+> branch "testBranch"
+A branch with that name already exists.
+<<<
+
+> status
+=== Branches ===
+\*master
+testBranch
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<*
+
+> checkout testBranch
+<<<
+
+> status
+=== Branches ===
+master
+\*testBranch
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<*
